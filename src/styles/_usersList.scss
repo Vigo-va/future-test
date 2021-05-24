@@ -1,0 +1,67 @@
+.usersList {
+  margin: $freeSpace 0;
+  -webkit-box-shadow: 0 0 5px 0 $boxShadowColor;
+  box-shadow: 0 0 5px 0 $boxShadowColor;
+  .notFound {
+    text-align: center;
+  }
+  thead {
+    th {
+      color: $mainColor;
+      font-size: $fontSizeBASE;
+      text-align: center;
+      cursor: pointer;
+
+      i {
+        margin-left: $freeSpace;
+      }
+      &:hover {
+        color: $whiteColor;
+        background-color: $hoverColor;
+      }
+    }
+  }
+  tbody {
+    tr {
+      cursor: pointer;
+      &.active {
+        color: $whiteColor;
+        background-color: $hoverColor;
+      }
+      &:hover {
+        color: $whiteColor;
+        background-color: $hoverColor;
+      }
+      td {
+        font-size: $fontSizeSM ;
+        padding: $freeSpace/2;
+      }
+    }
+  }
+
+  .inValidInput {
+    -webkit-box-shadow: 0 0 5px 0 red;
+    box-shadow: 0 0 5px 0 red;
+  }
+
+  input {
+    margin: 2px;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    width: 100%;
+    border: none;
+    border-radius: $borderRadius;
+    font-size: $fontSizeBASE;
+    -webkit-box-shadow: 0 0 5px 0 $boxShadowColor;
+    box-shadow: 0 0 5px 0 $boxShadowColor;
+    &:focus, &:active {
+      outline: none;
+      border: none;
+      -webkit-box-shadow: 0 0 5px 0 $boxShadowColor;
+      box-shadow: 0 0 5px 0 $boxShadowColor;
+    }
+  }
+}

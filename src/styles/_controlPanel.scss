@@ -1,0 +1,36 @@
+.controlPanel {
+  padding: $freeSpace 0;
+  margin: $freeSpace/2 0;
+  background-color: $darkBg;
+  border-radius: $borderRadius;
+  border: 1px solid $borderColor;
+  -webkit-box-shadow: 0 0 5px 0 $boxShadowColor;
+  box-shadow: 0 0 5px 0 $boxShadowColor;
+  button {
+    border-radius: 10px;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  input {
+    border-radius: 10px;
+
+    &:focus {
+      outline: none !important;
+      border-color: $borderColor !important;
+      -webkit-box-shadow: inset 0 0 5px 0 $boxShadowColor;
+      box-shadow: inset 0 0 5px 0 $boxShadowColor;
+    }
+  }
+  .search {
+    i {
+      position: absolute;
+      color: gray;
+      font-size: 20px;
+      right: $freeSpace*5;
+      top: $freeSpace/5;
+      z-index: 9999;
+      cursor: pointer ;
+    }
+  }
+}

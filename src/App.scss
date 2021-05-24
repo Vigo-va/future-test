@@ -1,0 +1,66 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import "styles/variables";
+@import "styles/controlPanel";
+@import "styles/usersList";
+@import "styles/customPagination";
+@import "styles/userCard";
+
+.addingButton {
+  position: absolute;
+  right: $freeSpace;
+  top: $freeSpace*8;
+  button {
+    font-size: $fontSizeBASE;
+    border-radius: $borderRadius 0 0 $borderRadius;
+
+  }
+}
+html {
+  overflow-y: scroll;
+}
+
+
+.loader {
+  position: absolute;
+  right:50%;
+  top: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.modalHeader {
+  background-color: $darkBg;
+  .modal-title {
+    line-height: 1;
+    &.h4 {
+      font-size: 20px;
+    }
+  }
+}
+
+.modal-body {
+  text-align: center;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.modalFooter {
+  background-color: $darkBg;
+  justify-content: center;
+  button {
+    margin: $freeSpace/10;
+    padding: $freeSpace/2 $freeSpace*2;
+  }
+}
+
+

@@ -1,0 +1,14 @@
+.pagination {
+    .page-link {
+      background-color: $darkBg;
+      color: $mainColor;
+      box-shadow: none;
+    }
+  .page-item.active .page-link, .page-item.disabled .page-link {
+    background-color: $mainColor !important;
+    color: $whiteColor;
+    border-color: $borderColor;
+  }
+}
+
+
