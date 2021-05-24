@@ -1,8 +1,8 @@
 FROM node:16.12.0
 
-WORKDIR /data-table-test
+WORKDIR ./
 
-ENV PATH /data-table-test/node_modules/.bin:$PATH
+ENV PATH ./node_modules/.bin:$PATH
 
 COPY package.json ./
 COPY package-lock.json ./
